@@ -36,15 +36,19 @@ body {
 /* Carrusel de imágenes */
 .carousel-container {
     position: absolute;
-    top: 10%;
-    left: 50%;
+    top: 16%;
+    left: 47.4%;
     transform: translateX(-50%);
     width: 80%;
-    max-width: 600px;
-    height: 300px;
+    max-width: 372px;
+    height: 213px;
     overflow: hidden;
-    border-radius: 10px;
+    border-radius: 0px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    -ms-border-radius: 0px;
+    -o-border-radius: 0px;
 }
 
 .carousel-container img {
