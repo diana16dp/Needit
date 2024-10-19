@@ -9,12 +9,13 @@
 </head>
 <body>
 
-    <div class="image-container">
+    <!-- Contenedor inicial con carrusel -->
+    <div id="inicio" class="image-container">
         <!-- Imagen principal -->
         <img src="gabinet2.jpeg" alt="gabinete">
 
         <!-- Botón sobre la imagen -->
-        <button onclick="alert('¡Empezando!')">Empezar</button>
+        <button id="empezar-btn" onclick="empezar()">Empezar</button>
 
         <!-- Carrusel de imágenes sobre la imagen de gabinete -->
         <div class="carousel-container">
@@ -24,9 +25,44 @@
         </div>
     </div>
 
+    <!-- Sección que aparece al presionar "Empezar" -->
+    <div id="pregunta-uso" class="hidden">
+        <h2>¿Qué uso le darías a tu PC?</h2>
+        <button class="opcion-uso" onclick="seleccionarUso('Gamer')">Gamer</button>
+        <button class="opcion-uso" onclick="seleccionarUso('Office')">Office</button>
+        <button class="opcion-uso" onclick="seleccionarUso('Diseño')">Diseño</button>
+        <button class="opcion-uso" onclick="seleccionarUso('School')">School</button>
+        <!-- Botón para volver al inicio -->
+        <button id="volver-btn" onclick="volver()">Volver</button>
+    </div>
+
+    <!-- Secciones para cada opción -->
+    <div id="gamer-section" class="hidden section-option">
+        <h2>Configuración para Gamer</h2>
+        <p>Aquí puedes configurar tu PC para gaming.</p>
+        <button id="volver-btn" onclick="volver()">Volver</button>
+    </div>
+
+    <div id="office-section" class="hidden section-option">
+        <h2>Configuración para Office</h2>
+        <p>Aquí puedes configurar tu PC para oficina.</p>
+        <button id="volver-btn" onclick="volver()">Volver</button>
+    </div>
+
+    <div id="diseno-section" class="hidden section-option">
+        <h2>Configuración para Diseño</h2>
+        <p>Aquí puedes configurar tu PC para diseño gráfico.</p>
+        <button id="volver-btn" onclick="volver()">Volver</button>
+    </div>
+
+    <div id="school-section" class="hidden section-option">
+        <h2>Configuración para School</h2>
+        <p>Aquí puedes configurar tu PC para uso escolar.</p>
+        <button id="volver-btn" onclick="volver()">Volver</button>
+    </div>
+
     <footer>
-        <p>Copyright Need IT - 2024. Todos los derechos reservados.
-            Defensa de las y los consumidores. Para reclamos ingresá acá. / Botón de arrepentimiento</p>
+        <p>&copy; 2024 Need IT. Todos los derechos reservados.</p>
     </footer>
 
     <script src="java.js"></script>

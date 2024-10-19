@@ -2,6 +2,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #050542;
 }
 
 /* Contenedor para la imagen y el botón */
@@ -21,10 +22,10 @@ body {
 /* Botón sobre la imagen */
 .image-container button {
     position: absolute;
-    top: 80%;
-    left: 50%;
+    top: 69%;
+    left: 47.5%;
     transform: translate(-50%, -50%);
-    padding: 20px 30px;
+    padding: 10px 30px;
     font-size: 16px;
     background-color: #007bff;
     color: white;
@@ -36,7 +37,7 @@ body {
 /* Carrusel de imágenes */
 .carousel-container {
     position: absolute;
-    top: 16%;
+    top: 5%;
     left: 47.4%;
     transform: translateX(-50%);
     width: 80%;
@@ -67,7 +68,52 @@ footer {
     color: white;
     text-align: center;
     padding: 10px 0;
-    position: fixed;
     width: 100%;
     bottom: 0;
 }
+
+/* Ocultar la sección por defecto */
+.hidden {
+    display: none;
+}
+
+#pregunta-uso {
+    text-align: center;
+    margin: 20px;
+}
+
+.opcion-uso {
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.opcion-uso:hover {
+    background-color: #0056b3;
+}
+
+/* Sección para cada opción */
+.section-option {
+    text-align: center;
+    margin: 20px;
+}
+
+#volver-btn {
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#volver-btn:hover {
+    background-color: #218838;
+}
+
