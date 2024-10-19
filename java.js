@@ -39,6 +39,14 @@ function volver() {
     // Mostrar la pag anterior
     document.getElementById('pregunta-uso').classList.remove('hidden');
 }
+// Función para volver al carrusel desde la sección de pregunta-uso
+function volverAlCarrusel() {
+    // Ocultar la sección de pregunta-uso
+    document.getElementById('pregunta-uso').classList.add('hidden');
+
+    // Mostrar el carrusel de inicio
+    document.getElementById('inicio').classList.remove('hidden');
+}
 
 // Ejecutar el carrusel cuando la página esté cargada
 window.onload = function() {

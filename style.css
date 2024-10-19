@@ -3,6 +3,8 @@ body {
     margin: 0;
     padding: 0;
     background-color: #050542;
+    h2 { color: #ffffff; }
+    p { color: #ffffff; }
 }
 
 /* Contenedor para la imagen y el botón */
@@ -30,8 +32,12 @@ body {
     background-color: #007bff;
     color: white;
     border: none;
-    border-radius: 30px;
+    border-radius: 5px;
     cursor: pointer;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
 }
 
 /* Carrusel de imágenes */
@@ -70,6 +76,7 @@ footer {
     padding: 10px 0;
     width: 100%;
     bottom: 0;
+    position: relative;
 }
 
 /* Ocultar la sección por defecto */
@@ -111,9 +118,35 @@ footer {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
 }
 
 #volver-btn:hover {
     background-color: #218838;
+}
+#volver-carrusel-btn {
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+#volver-carrusel-btn:hover{
+    background-color: #218838;
+}
+
+.estilosPreguntas {
+    h2 { color: #ffffff; }
+    p { color: #ffffff; }
 }
 
