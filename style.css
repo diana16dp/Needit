@@ -29,7 +29,7 @@ body {
     transform: translate(-50%, -50%);
     padding: 10px 30px;
     font-size: 16px;
-    background-color: #007bff;
+    background-color: #32bb52;
     color: white;
     border: none;
     border-radius: 5px;
@@ -38,6 +38,9 @@ body {
     -moz-border-radius: 5px;
     -ms-border-radius: 5px;
     -o-border-radius: 5px;
+}
+.image-container button:hover {
+    background-color:#28a344 ;
 }
 
 /* Carrusel de imágenes */
@@ -92,7 +95,7 @@ footer {
 .opcion-uso {
     padding: 10px 20px;
     margin: 10px;
-    background-color: #007bff;
+    background-color: #32bb52;
     color: white;
     border: none;
     border-radius: 5px;
@@ -101,7 +104,7 @@ footer {
 }
 
 .opcion-uso:hover {
-    background-color: #0056b3;
+    background-color: #28a344;
 }
 
 /* Sección para cada opción */
@@ -113,7 +116,7 @@ footer {
 #volver-btn {
     padding: 10px 20px;
     margin-top: 20px;
-    background-color: #28a745;
+    background-color: #2657c2;
     color: white;
     border: none;
     border-radius: 5px;
@@ -125,12 +128,12 @@ footer {
 }
 
 #volver-btn:hover {
-    background-color: #218838;
+    background-color: #1442a3;
 }
 #volver-carrusel-btn {
     padding: 10px 20px;
     margin-top: 20px;
-    background-color: #28a745;
+    background-color: #2657c2;
     color: white;
     border: none;
     border-radius: 5px;
@@ -142,7 +145,7 @@ footer {
 }
 
 #volver-carrusel-btn:hover{
-    background-color: #218838;
+    background-color: #1442a3;
 }
 
 .estilosPreguntas {
@@ -159,7 +162,7 @@ footer {
 
 .item {
     text-align: center;
-    border: 2px solid #007bff;
+    border: 2px solid #8b8b8b;
     border-radius: 5px;
     padding: 10px;
     cursor: pointer;
@@ -185,6 +188,24 @@ footer {
 .item.selected {
     border-color: #28a745;
     transform: scale(1.05);
+}
+
+#siguiente-btn {
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color:#2657c2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+#siguiente-btn:hover {
+    background-color: #1442a3;
 }
 
 
