@@ -68,3 +68,5 @@ window.onload = function() {
     // Cambiar imagen cada 3 segundos
     setInterval(showNextImage, 3000);
 };
+
+

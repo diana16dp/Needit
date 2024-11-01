@@ -42,8 +42,58 @@
             <div id="gamer-section" class="hidden section-option">
                 <h2>Configuración para Gamer</h2>
                 <p>Aquí puedes configurar tu PC para gaming.</p>
-                <button id="volver-btn" onclick="volver()">Atras</button>
+                
+                <!-- Contenedor de imágenes y precios en gamer-section -->
+                <div class="item-container">
+                    <div class="item" onclick="seleccionarItem(this, 100)">
+                        <img src="imagen1.jpg" alt="Producto 1">
+                        <p class="nombre">Producto 1</p>
+                        <p class="precio">$100</p>
+                    </div>
+                    <div class="item" onclick="seleccionarItem(this, 200)">
+                        <img src="imagen2.jpg" alt="Producto 2">
+                        <p class="nombre">Producto 2</p>
+                        <p class="precio">$200</p>
+                    </div>
+                    <!-- Agrega más items aquí -->
+                </div>
+            
+                <!-- Mostrar precio total en gamer-section -->
+                <p id="precio-gamer-total">Precio total: $0</p>
+            
+                <!-- Botones de navegación -->
+                <button id="siguiente-btn" onclick="irAConfiguracionAdicional()">Siguiente</button>
+                <button id="volver-btn" onclick="volver()">Atrás</button>
             </div>
+            
+            <!-- Nueva sección para configuración adicional -->
+            <div id="configuracion-adicional-section" class="hidden section-option">
+                <h2>Configuración Adicional</h2>
+                <p>Elige elementos adicionales para tu configuración de PC.</p>
+            
+                <div class="item-container">
+                    <div class="item" onclick="seleccionarItemAdicional(this, 50)">
+                        <img src="imagen3.jpg" alt="Producto 3">
+                        <p class="nombre">Producto 3</p>
+                        <p class="precio">$50</p>
+                    </div>
+                    <div class="item" onclick="seleccionarItemAdicional(this, 150)">
+                        <img src="imagen4.jpg" alt="Producto 4">
+                        <p class="nombre">Producto 4</p>
+                        <p class="precio">$150</p>
+                    </div>
+                    <!-- Agrega más items aquí -->
+                </div>
+            
+                <!-- Mostrar precio total en configuracion-adicional-section -->
+                <p id="precio-total">Precio total: $0</p>
+            
+                <!-- Botones de navegación -->
+                <button id="volver-btn" onclick="volverAGamer()">Atrás</button>
+                <button id="siguiente-btn" onclick="finalizarConfiguracion()">Siguiente</button>
+            </div>
+            
+            
 
             <div id="office-section" class="hidden section-option">
                 <h2>Configuración para Office</h2>

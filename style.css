@@ -150,3 +150,41 @@ footer {
     p { color: #ffffff; }
 }
 
+.item-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.item {
+    text-align: center;
+    border: 2px solid #007bff;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.item img {
+    width: 150px;
+    height: auto;
+    border-radius: 5px;
+}
+
+.item .nombre {
+    color: white;
+    font-weight: bold;
+}
+
+.item .precio {
+    color: #007bff;
+    font-weight: bold;
+}
+
+.item.selected {
+    border-color: #28a745;
+    transform: scale(1.05);
+}
+
+
