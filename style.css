@@ -186,7 +186,7 @@ footer {
 }
 
 .item.selected {
-    border-color: #28a745;
+    border-color: #20c21a;
     transform: scale(1.05);
 }
 
