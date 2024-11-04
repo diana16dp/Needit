@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -5,78 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="css.css">
-    <title>Arma tu PC - Simulador</title>
-
+    <title>Arma tu PC</title>
 </head>
-<body>
-
-    <header>
-        <h1>Arma tu PC</h1>
-    </header>
-
-    <main>
-        <section class="componentes">
-            <h2>Selecciona tus Componentes</h2>
-            
-            <!-- Selección de Gabinete -->
-            <div class="componente">
-                <label for="gabinete">Gabinete:</label>
-                <select id="gabinete" onchange="actualizarSeleccion()">
-                    <option value="" data-price="0">Seleccionar</option>
-                    <option value="Gabinete Gamer RGB" data-price="5000">Gabinete Gamer RGB - $5000</option>
-                    <option value="Gabinete Simple" data-price="3000">Gabinete Simple - $3000</option>
-                </select>
-            </div>
-
-            <!-- Selección de Procesador -->
-            <div class="componente">
-                <label for="procesador">Procesador:</label>
-                <select id="procesador" onchange="actualizarSeleccion()">
-                    <option value="" data-price="0">Seleccionar</option>
-                    <option value="Intel i5" data-price="25000">Intel i5 - $25000</option>
-                    <option value="AMD Ryzen 5" data-price="23000">AMD Ryzen 5 - $23000</option>
-                </select>
-            </div>
-
-            <!-- Selección de Memoria RAM -->
-            <div class="componente">
-                <label for="ram">Memoria RAM:</label>
-                <select id="ram" onchange="actualizarSeleccion()">
-                    <option value="" data-price="0">Seleccionar</option>
-                    <option value="8GB DDR4" data-price="8000">8GB DDR4 - $8000</option>
-                    <option value="16GB DDR4" data-price="15000">16GB DDR4 - $15000</option>
-                </select>
-            </div>
-
-            <!-- Selección de Tarjeta de Video -->
-            <div class="componente">
-                <label for="video">Tarjeta de Video:</label>
-                <select id="video" onchange="actualizarSeleccion()">
-                    <option value="" data-price="0">Seleccionar</option>
-                    <option value="NVIDIA GTX 1650" data-price="35000">NVIDIA GTX 1650 - $35000</option>
-                    <option value="NVIDIA RTX 3060" data-price="70000">NVIDIA RTX 3060 - $70000</option>
-                </select>
-            </div>
-        </section>
-
-        <section class="resumen">
-            <h2>Resumen de tu PC</h2>
-            <ul id="resumen-lista">
-                <li>Gabinete: <span id="gabinete-resumen">No seleccionado</span></li>
-                <li>Procesador: <span id="procesador-resumen">No seleccionado</span></li>
-                <li>Memoria RAM: <span id="ram-resumen">No seleccionado</span></li>
-                <li>Tarjeta de Video: <span id="video-resumen">No seleccionado</span></li>
-            </ul>
-
-            <h3>Total: $<span id="total">0</span></h3>
-            <button id="comprar-btn" onclick="comprar()">Comprar</button>
-        </section>
-    </main>
-
-    <footer>
-        <p>&copy; 2024 Need IT. Todos los derechos reservados.</p>
-    </footer>
-
-    <script src="JS.js"></script>
-</body>
+<body> 
+    <div class="resolucion">
+    <div class="desktop">
+        <h1>Esto es un ordenador</h1>
+    </div>
+    <div class="tablet">
+        <h1>Esto es un tablet</h1>
+    </div>
+    <div class="movil">
+        <h1>Esto es un movil</h1>
+    </div>
+</div>
+</body> 
 </html>

@@ -1,4 +1,4 @@
-function actualizarSeleccion() {
+/*function actualizarSeleccion() {
     // Obtener los selectores de los componentes
     const gabinete = document.getElementById('gabinete');
     const procesador = document.getElementById('procesador');
@@ -24,4 +24,4 @@ function actualizarSeleccion() {
 
 function comprar() {
     alert("Gracias por tu compra. Tu PC ha sido configurada.");
-}
+}*/
