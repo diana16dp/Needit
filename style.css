@@ -171,6 +171,24 @@ footer {
     }
 }
 
+/* Ajuste para pantallas de 414 x 896 */
+@media screen and (max-width: 414px) and (max-height: 896px) {
+    .carousel-container {
+        top: 15%; /* Ajusta este valor para mover las imágenes hacia abajo */
+        transform: translate(-50%, -20%);
+    }
+}
+
+/* Ajuste para pantallas de 430 x 932 */
+@media screen and (max-width: 430px) and (max-height: 932px) {
+    .carousel-container {
+        top: 15%; /* Ajusta este valor para mover las imágenes hacia abajo */
+        transform: translate(-50%, -25%);
+    }
+}
+
+
+
 /* Ajuste para pantallas de 375 x 667 */
 @media screen and (max-width: 375px) and (max-height: 667px) {
     .carousel-container {
@@ -204,18 +222,47 @@ footer {
     }
 }
 
-/* Ajuste para pantallas grandes */
-@media screen and (min-width: 991px) {
+
+/* Ajuste para pantallas de 768 x 1024 */
+@media screen and (max-width: 768px) and (max-height: 1024px) {
+    /* Mover la imagen de fondo a la izquierda */
+    .image-container {
+        background-position: 46% center; /* Mueve la imagen de fondo más a la izquierda */
+    }
+
+    /* Configuración del contenedor del carrusel */
     .carousel-container {
-        left: 45%; /* Ajusta este valor para mover la imagen hacia la izquierda */
-        transform: translate(-45%, -10%);
+        display: flex; /* Usar flexbox para alinear las imágenes */
+        justify-content: center; /* Centrar el contenido */
+        align-items: center; /* Centrar verticalmente */
+        overflow: hidden; /* Ocultar el desbordamiento */
+        width: 100%; /* Mantener el ancho completo */
+        height: auto; /* Ajustar la altura automáticamente */
+    }
+
+    .carousel-container img {
+        width: auto; /* Dejar que el ancho se ajuste automáticamente */
+        height: 120%; /* Aumentar la altura de las imágenes al 120% */
+        max-width: none; /* Sin límite de ancho máximo */
+        transform: translateY(-10%); /* Ajustar la posición vertical si es necesario */
     }
 }
+
+
+
+
+
+
+
 
 /* Ajuste para pantallas de 1024 x 600 */
 @media screen and (max-width: 1024px) and (max-height: 600px) {
     .carousel-container {
-        left: 44%; /* Ajusta este valor para mover la imagen hacia la izquierda */
-        transform: translate(-45%, -10%);
-    }
+        left: 44%;
+        /*Ajustaestevalorparamoverlaimagenhacialaizquierda*/transform: translate(-45%, -10%);
+        -webkit-transform: translate(-45%, -10%);
+        -moz-transform: translate(-45%, -10%);
+        -ms-transform: translate(-45%, -10%);
+        -o-transform: translate(-45%, -10%);
+}
 }
