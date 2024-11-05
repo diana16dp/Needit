@@ -222,7 +222,6 @@ footer {
     }
 }
 
-
 /* Ajuste para pantallas de 768 x 1024 */
 @media screen and (max-width: 768px) and (max-height: 1024px) {
     /* Mover la imagen de fondo a la izquierda */
@@ -238,13 +237,49 @@ footer {
         overflow: hidden; /* Ocultar el desbordamiento */
         width: 100%; /* Mantener el ancho completo */
         height: auto; /* Ajustar la altura automáticamente */
+        padding: 10% 0; /* Agregar un padding para dar un poco de espacio vertical */
     }
 
     .carousel-container img {
         width: auto; /* Dejar que el ancho se ajuste automáticamente */
         height: 120%; /* Aumentar la altura de las imágenes al 120% */
-        max-width: none; /* Sin límite de ancho máximo */
+        max-width: none !important; /* Elimina cualquier restricción de tamaño máximo */
         transform: translateY(-10%); /* Ajustar la posición vertical si es necesario */
+        transition: height 0.3s ease; /* Añadir una transición suave al cambio de tamaño */
+    }
+}
+
+/* Ajuste para pantallas de 820 x 1180 */
+@media screen and (max-width: 820px) and (max-height: 1180px) {
+    /* Mover la imagen de fondo a la izquierda */
+    .image-container {
+        background-position: 46% center; /* Mueve la imagen de fondo más a la izquierda */
+    }
+
+    /* Configuración del contenedor del carrusel */
+    .carousel-container {
+        display: flex; /* Usar flexbox para alinear las imágenes */
+        justify-content: center; /* Centrar el contenido */
+        align-items: center; /* Centrar verticalmente */
+        overflow: hidden; /* Ocultar el desbordamiento */
+        width: 100%; /* Mantener el ancho completo */
+        height: auto; /* Ajustar la altura automáticamente */
+        padding: 10% 0; /* Agregar un padding para dar un poco de espacio vertical */
+    }
+
+    .carousel-container img {
+        width: auto; /* Dejar que el ancho se ajuste automáticamente */
+        height: 100%; /* Hacer que la imagen ocupe toda la altura del contenedor */
+        max-width: none; /* Eliminar restricciones de ancho */
+        max-height: none; /* Eliminar restricciones de altura */
+        object-fit: contain; /* Mantener la imagen completa sin recortar */
+        position: relative; /* Permite que la imagen se posicione dentro del contenedor */
+        transform: scale(1.1); /* Agrandar la imagen ligeramente */
+        transition: transform 0.3s ease; /* Añadir una transición suave al cambio de tamaño */
+    }
+
+    .carousel-container img.active {
+        display: block; /* Asegurarse de que la imagen activa se muestre */
     }
 }
 
