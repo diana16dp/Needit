@@ -9,16 +9,134 @@
     <title>Arma tu PC</title>
 </head>
 <body> 
-    <div class="resolucion">
-    <div class="desktop">
-        <h1>Esto es un ordenador</h1>
+   <!-- División de configuración para Gamer con 8 subcategorías -->
+<div id="gamer-section" class="hidden section-option">
+    <h2>Configuración para Gamer</h2>
+    <p>Aquí puedes configurar tu PC para gaming.</p>
+
+    <!-- Subcategoría 1: Procesadores -->
+    <div id="gamer-subsection-1" class="item-container">
+        <h3>Procesadores</h3>
+        <div class="item" onclick="seleccionarItem(this, 100)">
+            <img src="Ryzen9500.png" alt="Procesador 1">
+            <p class="nombre">Procesador 1</p>
+            <p class="precio">$100</p>
+        </div>
+        <div class="item" onclick="seleccionarItem(this, 200)">
+            <img src="Ryzen9500.png" alt="Procesador 2">
+            <p class="nombre">Procesador 2</p>
+            <p class="precio">$200</p>
+        </div>
+        <!-- Más items hasta completar 5 por subcategoría -->
     </div>
-    <div class="tablet">
-        <h1>Esto es un tablet</h1>
+
+    <!-- Subcategoría 2: Tarjetas Gráficas -->
+    <div id="gamer-subsection-2" class="item-container hidden">
+        <h3>Tarjetas Gráficas</h3>
+        <div class="item" onclick="seleccionarItem(this, 300)">
+            <img src="gpu.png" alt="Tarjeta Gráfica 1">
+            <p class="nombre">Tarjeta Gráfica 1</p>
+            <p class="precio">$300</p>
+        </div>
+        <div class="item" onclick="seleccionarItem(this, 400)">
+            <img src="gpu.png" alt="Tarjeta Gráfica 2">
+            <p class="nombre">Tarjeta Gráfica 2</p>
+            <p class="precio">$400</p>
+        </div>
     </div>
-    <div class="movil">
-        <h1>Esto es un movil</h1>
+
+    <!-- Subcategoría 3: Memorias RAM -->
+    <div id="gamer-subsection-3" class="item-container hidden">
+        <h3>Memorias RAM</h3>
+        <div class="item" onclick="seleccionarItem(this, 150)">
+            <img src="ram.png" alt="Memoria RAM 1">
+            <p class="nombre">Memoria RAM 1</p>
+            <p class="precio">$150</p>
+        </div>
+        <div class="item" onclick="seleccionarItem(this, 250)">
+            <img src="ram.png" alt="Memoria RAM 2">
+            <p class="nombre">Memoria RAM 2</p>
+            <p class="precio">$250</p>
+        </div>
     </div>
+
+    <!-- Continuar hasta Subcategoría 8 con la misma estructura -->
+    <div id="gamer-subsection-4" class="item-container hidden">
+        <h3>Almacenamiento</h3>
+        <div class="item" onclick="seleccionarItem(this, 150)">
+            <img src="ram.png" alt="Memoria RAM 1">
+            <p class="nombre">Memoria RAM 1</p>
+            <p class="precio">$150</p>
+        </div>
+        <div class="item" onclick="seleccionarItem(this, 250)">
+            <img src="ram.png" alt="Memoria RAM 2">
+            <p class="nombre">Memoria RAM 2</p>
+            <p class="precio">$250</p>
+        </div>
+    </div>
+
+    <div id="gamer-subsection-5" class="item-container hidden">
+        <h3>Fuentes de Poder</h3>
+        <div class="item" onclick="seleccionarItem(this, 150)">
+            <img src="ram.png" alt="Memoria RAM 1">
+            <p class="nombre">Memoria RAM 1</p>
+            <p class="precio">$150</p>
+        </div>
+        <div class="item" onclick="seleccionarItem(this, 250)">
+            <img src="ram.png" alt="Memoria RAM 2">
+            <p class="nombre">Memoria RAM 2</p>
+            <p class="precio">$250</p>
+        </div>
+    </div>
+
+    <div id="gamer-subsection-6" class="item-container hidden">
+        <h3>Gabinetes</h3>
+        <div class="item" onclick="seleccionarItem(this, 150)">
+            <img src="ram.png" alt="Memoria RAM 1">
+            <p class="nombre">Memoria RAM 1</p>
+            <p class="precio">$150</p>
+        </div>
+        <div class="item" onclick="seleccionarItem(this, 250)">
+            <img src="ram.png" alt="Memoria RAM 2">
+            <p class="nombre">Memoria RAM 2</p>
+            <p class="precio">$250</p>
+        </div>
+    </div>
+
+    <div id="gamer-subsection-7" class="item-container hidden">
+        <h3>Enfriamiento</h3>
+        <div class="item" onclick="seleccionarItem(this, 150)">
+            <img src="ram.png" alt="Memoria RAM 1">
+            <p class="nombre">Memoria RAM 1</p>
+            <p class="precio">$150</p>
+        </div>
+        <div class="item" onclick="seleccionarItem(this, 250)">
+            <img src="ram.png" alt="Memoria RAM 2">
+            <p class="nombre">Memoria RAM 2</p>
+            <p class="precio">$250</p>
+        </div>
+    </div>
+
+    <div id="gamer-subsection-8" class="item-container hidden">
+        <h3>Periféricos</h3>
+        <div class="item" onclick="seleccionarItem(this, 150)">
+            <img src="ram.png" alt="Memoria RAM 1">
+            <p class="nombre">Memoria RAM 1</p>
+            <p class="precio">$150</p>
+        </div>
+        <div class="item" onclick="seleccionarItem(this, 250)">
+            <img src="ram.png" alt="Memoria RAM 2">
+            <p class="nombre">Memoria RAM 2</p>
+            <p class="precio">$250</p>
+        </div>
+    </div>
+
+    <p id="precio-gamer-total">Precio total: $0</p>
+
+    <button id="volver-btn" onclick="mostrarSubcategoriaAnterior()">Atrás</button>
+    <button id="siguiente-btn" onclick="mostrarSiguienteSubcategoria()">Siguiente</button>
+</div>
+
 </div>
 </body> 
 </html>
