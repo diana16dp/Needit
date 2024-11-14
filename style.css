@@ -79,6 +79,7 @@ body {
     display: block;
 }
 
+
 /* Estilo del footer */
 footer {
     background-color: #333;
@@ -112,11 +113,24 @@ footer {
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
 }
 
+
+
+.estilosPreguntas {
+    display: flex;
+    justify-content: center; /* Centra los botones horizontalmente */
+    align-items: center; /* Centra los botones verticalmente */
+    text-align: center;
+
+}
+
+#volver-uso-btn,
 #volver-btn,
 #volver-carrusel-btn,
 #siguiente-btn {
+    
+    text-align: center;
     padding: 12px 24px;
-    margin-top: 20px;
+    margin: 20px auto; /* Centra el botón */
     background-color: #2630c2;
     color: white;
     border: none;
@@ -124,9 +138,11 @@ footer {
     cursor: pointer;
     transition: all 0.3s ease;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex; /* Asegura que se trate como un bloque */
+    
 }
 
-
+#volver-uso-btn:hover,
 #volver-btn:hover,
 #volver-carrusel-btn:hover,
 #siguiente-btn:hover {
