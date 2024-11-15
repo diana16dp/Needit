@@ -9,17 +9,19 @@ function empezar() {
 
 // Función para manejar la selección del uso y mostrar la sección correspondiente
 function seleccionarUso(uso) {
+    // Ocultar todas las opciones antes de mostrar la sección correspondiente
     ocultarOpcionesUso();
+
+    // Ocultar el botón de "volver" y la pregunta de uso
     ocultarBotonYPregunta();
+
+    // Ocultar todas las secciones
     ocultarTodasSecciones();
 
+    // Mostrar la sección seleccionada según el uso
     if (uso === 'Gamer') {
         document.getElementById('gamer-section').classList.remove('hidden');
         document.getElementById('gamer-subsection-1').classList.remove('hidden'); // Mostrar primera subcategoría en Gamer
-
-        // Ocultar el botón "Atrás" y mostrar "Volver a opciones de uso" en procesadores
-        document.getElementById('volver-btn').style.display = 'none';
-        document.getElementById('volver-uso-btn').style.display = 'block';
     } else if (uso === 'Office') {
         document.getElementById('office-section').classList.remove('hidden');
     } else if (uso === 'Diseño') {
@@ -84,12 +86,6 @@ function seleccionarItem(item, precio) {
 
 function mostrarSiguienteSubcategoria() {
     if (subcategoriaActual < 10) {
-        // Ocultar "Volver a opciones de uso" y mostrar "Atrás" si salimos de procesadores
-        if (subcategoriaActual === 1) {
-            document.getElementById('volver-uso-btn').style.display = 'none';
-            document.getElementById('volver-btn').style.display = 'block';
-        }
-
         document.getElementById(`gamer-subsection-${subcategoriaActual}`).classList.add('hidden');
         subcategoriaActual++;
         document.getElementById(`gamer-subsection-${subcategoriaActual}`).classList.remove('hidden');
@@ -103,12 +99,6 @@ function mostrarSubcategoriaAnterior() {
         document.getElementById(`gamer-subsection-${subcategoriaActual}`).classList.add('hidden');
         subcategoriaActual--;
         document.getElementById(`gamer-subsection-${subcategoriaActual}`).classList.remove('hidden');
-
-        // Ocultar "Atrás" y mostrar "Volver a opciones de uso" si regresamos a procesadores
-        if (subcategoriaActual === 1) {
-            document.getElementById('volver-btn').style.display = 'none';
-            document.getElementById('volver-uso-btn').style.display = 'block';
-        }
     }
 }
 
@@ -130,14 +120,6 @@ function mostrarOpcionesUso() {
     opcionesUso.forEach(opcion => {
         opcion.classList.remove('hidden');
     });
-}
-
-// Función para regresar a la selección de uso
-function volverASeleccionUso() {
-    ocultarTodasSubcategorias();
-    document.getElementById('gamer-section').classList.add('hidden');
-    document.getElementById('pregunta-uso').classList.remove('hidden');
-    mostrarOpcionesUso();
 }
 
 // Ejecutar el carrusel cuando la página esté cargada
